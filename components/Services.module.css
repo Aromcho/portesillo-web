@@ -1,0 +1,371 @@
+.services {
+  padding: 6rem 0;
+  background: #fafafa;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 6rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.15);
+  border-color: #ff6b35;
+}
+
+.featureIcon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.featureTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Vehicles Section */
+.vehiclesSection {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.vehiclesTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.vehiclesSubtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.vehiclesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.vehicleCard {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.vehicleCard:hover {
+  transform: translateY(-8px);
+  border-color: #ff6b35;
+  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.15);
+}
+
+.vehicleIcon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.vehicleType {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+}
+
+.vehicleCapacity {
+  display: inline-block;
+  background: #fff5f0;
+  color: #ff6b35;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.vehicleIdeal {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.vehiclePrice {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: 1.5rem;
+}
+
+.vehicleBtn {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.vehicleBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+}
+
+/* Stats Section */
+.statsSection {
+  background: white;
+  padding: 4rem 3rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.statCard {
+  padding: 1.5rem;
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ff6b35;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statLabel {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .services {
+    padding: 4rem 0;
+  }
+
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .featureCard {
+    padding: 2.5rem 1.75rem;
+  }
+
+  .featureIcon {
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .featureTitle {
+    font-size: 1.3rem;
+  }
+
+  .featureDescription {
+    font-size: 0.95rem;
+  }
+
+  .vehiclesTitle {
+    font-size: 2.2rem;
+  }
+
+  .vehiclesSubtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .vehiclesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .vehicleCard {
+    padding: 2.5rem 1.75rem;
+  }
+
+  .vehicleIcon {
+    font-size: 4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .vehicleType {
+    font-size: 1.3rem;
+  }
+
+  .vehiclePrice {
+    font-size: 1.6rem;
+  }
+
+  .statsSection {
+    padding: 3rem 2rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .statNumber {
+    font-size: 2.5rem;
+  }
+
+  .statLabel {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding: 3rem 0;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .featureCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .featureIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .featureTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .featureDescription {
+    font-size: 0.925rem;
+    line-height: 1.6;
+  }
+
+  .vehiclesSection {
+    margin-bottom: 3rem;
+  }
+
+  .vehiclesTitle {
+    font-size: 1.85rem;
+    line-height: 1.3;
+  }
+
+  .vehiclesSubtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .vehiclesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .vehicleCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .vehicleIcon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .vehicleType {
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .vehicleCapacity {
+    font-size: 0.9rem;
+    padding: 0.375rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .vehicleIdeal {
+    font-size: 0.925rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .vehiclePrice {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .vehicleBtn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+    min-height: 48px;
+  }
+
+  .vehicleBtn:active {
+    transform: scale(0.98);
+  }
+
+  .statsSection {
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .statCard {
+    padding: 1.25rem;
+  }
+
+  .statNumber {
+    font-size: 2.25rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .statLabel {
+    font-size: 0.95rem;
+  }
+}
