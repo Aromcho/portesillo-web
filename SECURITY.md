@@ -5,7 +5,7 @@
 ### React & Next.js
 - **React**: `18.3.1` (LTS - Versión estable y SEGURA)
 - **React DOM**: `18.3.1`
-- **Next.js**: `14.2.15` (Última versión estable de Next.js 14 sin vulnerabilidades)
+- **Next.js**: `14.2.35` (Última versión parcheada de Next.js 14 sin CVE críticos)
 
 ### ⚠️ ADVERTENCIA: Vulnerabilidades Conocidas
 
@@ -23,11 +23,28 @@
 - **Soporte hasta 2025+**
 - **Compatible con Next.js 14.2.x**
 
-#### ✅ Next.js 14.2.15 - SEGURA
-- **Sin vulnerabilidades conocidas**
+#### ✅ Next.js 14.2.35 - SEGURA Y RECOMENDADA
+- **Últimos parches de seguridad aplicados**
 - **Compatible con React 18.3.1**
-- **Versión estable de Next.js 14**
-- **No afectada por CVE-2025-55182**
+- **Versión más estable de Next.js 14**
+- **No afectada por CVE-2025-55182 de React 19**
+- **Vulnerabilidades moderadas residuales** (DoS en Image Optimizer - mitigable)
+
+## 🟡 Vulnerabilidades Menores Aceptadas (No Críticas)
+
+### glob 10.2.0-10.4.5 (dev dependency)
+- **Severidad**: High
+- **CVE**: GHSA-5j98-mcp5-4vw2 (Command injection en CLI)
+- **Impacto**: Solo afecta CLI en desarrollo
+- **Mitigación**: No se usa en producción, solo para linting
+- **Estado**: Aceptable para entorno de desarrollo
+
+### Next.js Image Optimizer DoS
+- **Severidad**: Moderate
+- **CVE**: GHSA-9g9p-9gw9-jx7f
+- **Impacto**: Solo si usas remotePatterns con imágenes externas
+- **Mitigación**: No usar remotePatterns o limitar dominios específicos
+- **Estado**: No afecta esta aplicación (sin imágenes remotas configuradas)
 
 ## 🛡️ Por Qué Estas Versiones Son Seguras
 
